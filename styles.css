@@ -1,0 +1,107 @@
+header {
+    display:flexbox;
+    align-items: center;
+    padding: 25px;
+    margin: 50px;
+    background-color: #919cff;
+    width: 100%;
+
+    
+}
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-position: inside;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.menu-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  /* Estilo dos traços (linhas) do botão hamburguer */
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Estilo da lista do menu */
+  .menu-list {
+    list-style-type: none;
+    padding: 0;
+    background-color: #020A53;
+    color: #F5F5F5;
+    position: absolute;
+    top: 80px; /* Posição abaixo do botão */
+    right: -200px; /* Inicialmente, a lista estará escondida fora da tela */
+    width: 200px;
+    transition: right 0.3s ease;
+  }
+
+  .menu-list a:hover {
+    color: #f04050;
+  }
+  
+  .menu-list li {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  /* Estilo da animação do botão hamburguer */
+  .menu-opened .line:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .menu-opened .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-opened .line:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .img {
+    max-width: 600px;
+    min-height: 200px
+  }
+
+.img1 {
+  position: absolute;
+  max-width: 891px;
+  min-height: 30px
+}
+
+  .apresentacao {
+    color: white;
+    background-color: #0019fd;
+    position: absolute;
+    top: 400px ; /* Posiciona o texto no topo */
+    left: 1000px; /* Posiciona o texto à direita */
+    padding: 10px; /* Espaçamento interno do texto */
+    border: 5px solid #000;
+    border-radius: 20%;
+}
+
+.borda {
+ text-align: center;
+ background-color: white;
+ padding: 10%;
+ border-radius: 20%;
+}
+
+/*.agende {
+  text-align: center;
+  background-color: #919cff;
+  height: 120px;
+  border-radius: 30%;
+}/*
